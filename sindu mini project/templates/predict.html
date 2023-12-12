@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Smoke Detection Prediction</title>
+   <style>
+    body {
+        background-image: url('static/smoke-detector.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    h2 {
+        text-align: center;
+        margin-top: 10px;
+        color: rgb(9, 9, 9); 
+    }
+    form {
+        background: rgba(255, 255, 255, 0.7); 
+        padding: 50px;
+        border-radius: 25px;
+        margin: 10px auto;
+        width: 300px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+          
+    }
+    label, input {
+        display: ruby-base;
+        margin-bottom: 1px;
+        
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 5px;
+    }
+    input[type="submit"] {
+        background-color: #0074d9; 
+        color: white; 
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>  
+</head>
+<body>
+    <h2>Enter Values for Smoke Detection Prediction</h2>
+    <form action="/submit" method="post">
+        <label for="Temperature[c]">Temperature (°C):</label>
+        <input type="text" id="Temperature[c]" name="Temperature[c]" required><br><br>
+
+        <label for="Humidity[%]">Humidity (%):</label>
+        <input type="text" id="Humidity[%]" name="Humidity[%]" required><br><br>
+
+        <label for="TVOC[ppb]">TVOC (ppb):</label>
+        <input type="text" id="TVOC[ppb]" name="TVOC[ppb]" required><br><br>
+
+        <label for="Raw H2">Raw H2:</label>
+        <input type="text" id="Raw H2" name="Raw H2" required><br><br>
+
+        <label for="Raw Ethanol">Raw Ethanol:</label>
+        <input type="text" id="Raw Ethanol" name="Raw Ethanol" required><br><br>
+
+        <label for="Pressure[hpa]">Pressure (hPa):</label>
+        <input type="text" id="Pressure[hpa]" name="Pressure[hpa]" required><br><br>
+
+        <label for="NC0.5">NC0.5:</label>
+        <input type="text" id="NC0.5" name="NC0.5" required><br><br>
+
+        <label for="CNT">CNT:</label>
+        <input type="text" id="CNT" name="CNT" required><br><br>
+
+        <input type="submit"  value="submit">
+
+    </form>
+</body>
+</html>

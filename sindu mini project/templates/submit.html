@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smoke Detection Result</title>
+    <style>
+        body {
+            background-image: url('static/smoke-detector.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white; 
+        }
+        h2 {
+            text-align: center;
+            font-size: 40px;
+        }
+        p {
+            width: 95%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50);
+            text-align: center;
+            color:white;
+            font-size: 30px;
+        }
+        p {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7); 
+            border-radius: 10px;
+        }
+        a {
+            
+            position: absolute;
+            top: 70%;
+            left: 43%;
+            text-align: center;
+            color:white;
+            padding: 10px 20px; 
+            border: none;
+            cursor: pointer;
+            background-color: blue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Smoke Detection Result</h2>
+    <p>{{ prediction_text }}</p>
+    
+    <a href="/predict">Go back to Home</a>
+</body>
+</html>
